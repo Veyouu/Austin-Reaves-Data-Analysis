@@ -2,31 +2,213 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Austin Reaves Data Analysis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Reaves Career Stat Analysis</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif; 
+            background-color: #552583; 
+            color: #FDB927; 
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(253, 185, 39, 0.5);
+        }
+        h1, h2 {
             text-align: center;
-            margin: 50px;
-            background-color: #f2f2f2;
+            color: #FDB927;
         }
-        h1 { color: #2c3e50; }
-        p { font-size: 18px; }
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
+        .conclusion {
+            background-color: #FDB927;
+            color: #552583;
+            padding: 20px;
             border-radius: 5px;
+            margin-bottom: 20px;
+            font-weight: bold;
         }
-        a:hover { background-color: #2980b9; }
+        .section {
+            margin-bottom: 30px;
+        }
+        img, video {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #FDB927;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        .plot {
+            text-align: center;
+        }
+        .plot img {
+            max-width: 80%;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to Austin Reaves Data Analysis</h1>
-    <p>This site contains all the data, charts, and insights about Austin Reaves’ stats.</p>
-    <a href="#">Explore the Analysis</a>
+    <div class="container">
+        <h1>Austin Reaves: Lakers Emerging Undrafted Kid.</h1>
+        
+        <!-- Conclusion at the very start -->
+        <div class="conclusion">
+            <h2>Conclusion</h2>
+            <p>The analysis shows a consistent year-to-year improvement in Austin Reaves’ performance from 2021–2025. His scoring increased from 7.3 PPG to 20.2 PPG, marking a 176% improvement from his rookie season.</p>
+        </div>
+        
+        <!-- Picture of Austin Reaves -->
+        <div class="section">
+            <h2>Austin Reaves</h2>
+            <img src="austin_pic.avif" alt="Austin Reaves" width="1000">
+        </div>
+        
+        <!-- Video of Austin Reaves -->
+        <div class="section">
+            <h2>Highlight Video</h2>
+            <video controls width="1000">
+                <source src="austin_highlight.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        
+        
+        <!-- Austin Reaves DataFrame -->
+        <div class="section">
+            <h2>Austin Reaves DataFrame</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Season</th>
+                        <th>PPG</th>
+                        <th>RPG</th>
+                        <th>APG</th>
+                        <th>MPG</th>
+                        <th>FG%</th>
+                        <th>3P%</th>
+                        <th>FT%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Placeholder DataFrame; replace with actual data -->
+                    <tr>
+                        <td>2021-22</td>
+                        <td>7.3</td>
+                        <td>3.2</td>
+                        <td>1.8</td>
+                        <td>23.2</td>
+                        <td>45.9%</td>
+                        <td>31.7%</td>
+                        <td>83.9%</td>
+                    </tr>
+                    <tr>
+                        <td>2022-23</td>
+                        <td>13.0</td>
+                        <td>3.0</td>
+                        <td>3.4</td>
+                        <td>28.8</td>
+                        <td>52.9%</td>
+                        <td>39.8%</td>
+                        <td>86.4%</td>
+                    </tr>
+                    <tr>
+                        <td>2023-24</td>
+                        <td>15.9</td>
+                        <td>4.3</td>
+                        <td>5.5</td>
+                        <td>32.1</td>
+                        <td>48.6%</td>
+                        <td>36.7%</td>
+                        <td>85.3%</td>
+                    </tr>
+                    <tr>
+                        <td>2024-25</td>
+                        <td>20.2</td>
+                        <td>4.5</td>
+                        <td>5.8</td>
+                        <td>34.9</td>
+                        <td>46.0%</td>
+                        <td>37.7%</td>
+                        <td>87.7%</td>
+                    </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Predicted Stats for 2025-2026 Season -->
+        <div class="section">
+            <h2>Predicted Stats for 2025-2026 Season</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Predicted Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Placeholder predictions; replace with actual predictions -->
+                    <tr>
+                        <td>Points</td>
+                        <td>24.5</td>
+                    </tr>
+                    <tr>
+                        <td>Rebounds</td>
+                        <td>5.05</td>
+                    </tr>
+                    <tr>
+                        <td>Assists</td>
+                        <td>7.65</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Austin Reaves Scoring Trend Plot -->
+        <div class="section plot">
+            <h2>Austin Reaves Scoring Trend Plot</h2>
+            <img src="ppg_trend.png" alt="Scoring Trend Plot">
+        <div class="section conclusion">
+            <h2>Conclusion</h2>
+            <p>The graph shows how consistently Austin Reaves is improving every year. This could only mean that this year, he would be around above 20 ppg and more or less could average 25.0 ppg.</p>
+        </div>
+        </div>
+        
+        
+        <div class="section plot">
+            <h2>Minutes vs Points Scatter Plot</h2>
+            <img src="mpg_vs_ppg.png" alt="Minus vs Points Scatter Plot">
+            <div class="section conclusion">
+            <h2>Conclusion</h2>
+            <p>Minutes per game (MPG) strongly correlate with scoring (PPG), indicating that increased role and playing time greatly contributed.</p>
+        </div>
+        </div>
+        
+        <!-- Correlation Heatmap -->
+        <div class="section plot">
+            <h2>Correlation Heatmap</h2>
+            <img src="correlation_heatmap.png" alt="Correlation Heatmap">
+        <div class="correlation conclusion">
+            
+            <p>Austin Reaves demonstrates a steady developmental arc typical of emerging NBA starters. His scoring growth is highly tied to his increased usage and expanded responsibilities within the Lakers offense. The combination of improved ball-handling, confidence, and playmaking opportunity appears to be the strongest contributor to his rise in production. It cannot be denied that this young star would soon be an All-Star.</p>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
